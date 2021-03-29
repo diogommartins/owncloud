@@ -1,6 +1,8 @@
 # Nextcloud
 
-A Nextcloud environment configuration
+A Nextcloud docker-compose based environment configuration
+
+![docker-compose graph viz](./docker-compose.png)
 
 ## Requirements
 
@@ -22,8 +24,6 @@ Running docker-compose is all you need to do to setup nextcloud, using postgres 
 ```
 docker-compose up
 ```
-
-![docker-compose graph viz](./docker-compose.png)
 
 ## Warnings
 
