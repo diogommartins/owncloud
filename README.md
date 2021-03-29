@@ -1,6 +1,6 @@
-# Nextcloud
+# XCloud
 
-A Nextcloud docker-compose based environment configuration
+A [Nextcloud](https://nextcloud.com/athome/) docker-compose based environment configuration
 
 ![docker-compose graph viz](./docker-compose.png)
 
