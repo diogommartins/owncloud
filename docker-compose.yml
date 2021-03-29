@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  db:
+    image: postgres:alpine
+    restart: always
+    volumes:
+      - db:/var/lib/postgresql/data
+    env_file:
+      - db.env
+
+  nextcloud:
+    image: nextcloud:apache
+    restart: always
+    volumes:
+      - nextcloud:/var/www/html
+    env_file:
+      - nextcloud.env
+    depends_on:
+      - db
+    ports:
+      - 8888:80
+
+  ngrok:
+    image: wernight/ngrok
+    depends_on:
+      - nextcloud
+    env_file: ngrok.env
+
+volumes:
+  db:
+  nextcloud:
