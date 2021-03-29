@@ -12,14 +12,15 @@ A Nextcloud docker-compose based environment configuration
 
 ## Setup
 
-Rename `nextcloud.env-template` to `nextcloud.env` and update the environement variables
+Rename `nextcloud.env-template` to `nextcloud.env` and update the environment variables
 to values that makes sense to your use case. Do the same with `ngrok.env-template` and `db.env-template`.
 
 More info on environement variables can be found here: https://github.com/nextcloud/docker
 
 ## Running
 
-Running docker-compose is all you need to do to setup nextcloud, using postgres as the DB and ngrok as a way to make your personal cloud publicly accessible through the internet.
+Running docker-compose is all you need to do to setup nextcloud, using postgres as the DB and ngrok as 
+a way to make your personal cloud publicly accessible through the internet.
 
 ```
 docker-compose up
